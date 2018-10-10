@@ -1,7 +1,7 @@
 ## Install
 
 ```
-$ npm install oldTVDemo
+$ npm install oldtvdemo
 ```
 
 

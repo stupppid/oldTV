@@ -1,0 +1,22 @@
+{
+  "name": "oldtvdemo",
+  "version": "1.0.0",
+  "description": "a canvas demo",
+  "main": "bell.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stupppid/oldTV.git"
+  },
+  "keywords": [
+    "oldtv"
+  ],
+  "author": "qizhuang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stupppid/oldTV/issues"
+  },
+  "homepage": "https://github.com/stupppid/oldTV#readme"
+}
