@@ -1,4 +1,5 @@
-    Bell = function (options,callback) {
+	'use strict';    
+	var Bell = function (options,callback) {
         this.callback = callback;
         this.id = options.id;
         this.overTime = (options.overTime>9 || options.overTime<1)?9000:options.overTime*1000 || 9000;   //超时的时间
@@ -15,7 +16,6 @@
     Bell.prototype={
         init: function (){
             let _this = this;
-
             let p = Math.random();
             document.getElementById(this.id).innerHTML = "" +
                 "<canvas id=\"bell" + p + '\"' +
@@ -107,7 +107,7 @@
             let movePercentage = (this.leftTime %1000)/1000;
             ctx.moveTo(this.x,this.y);
             ctx.lineTo(this.x*2,this.y);
-            ctx.arc(this.x,this.y,Math.sqrt(this.x**2+this.y**2),0,movePercentage*Math.PI*2)
+            ctx.arc(this.x,this.y,Math.sqrt(Math.pow(this.x,2)+Math.pow(this.y,2)),0,movePercentage*Math.PI*2)
             ctx.fill();
         },
         drawLines(ctx){
@@ -129,3 +129,5 @@
             ctx.stroke();
         }
     }
+	
+	module.exports = Bell;
